@@ -1,0 +1,130 @@
+
+
+
+.info-balance{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+
+.info-balance-card2{
+    width: 596.66px;
+    height: 322.38px;
+    background-color: white;
+    box-shadow: $shade;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+    .name{
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+
+    .history{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+    
+    .history-heading{
+        display: flex;
+        
+        gap: 30px;
+        color: #AEAEAE;
+
+        .reciever{
+            margin-right: auto;
+        }
+
+        .type{
+            width: 100px;
+        }
+
+        .date{
+            width: 100px;
+        }
+        .amount{
+            width: 70px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .block{
+        display: flex;
+        gap: 10px;
+        font-size: .9rem;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(#ECECEC, .5);
+        padding-bottom: 7px;
+
+        .company-name{
+            display: flex;
+            gap: 10px;
+            margin-right: auto;
+            .icon{
+                width: 20px;
+                height: 20px;
+                background-color: #EFEFEF;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                transition: .5s;
+                i{
+                    font-size: .7rem;
+                    color: $brownish;
+                }
+                &:hover{
+                    background-color: $logo2;
+                    cursor: pointer;
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .company-type{
+            display: flex;
+            
+            gap: 30px;
+
+            .type{
+                width: 100px;
+                color: #AEAEAE;
+            }
+
+            .date{
+                width: 100px;
+                color: #AEAEAE;
+            }
+            .amount{
+                width: 70px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .date{
+            display: flex;
+            
+        }
+
+       
+        
+    }
+}

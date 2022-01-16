@@ -1,0 +1,56 @@
+
+
+
+.info-statics-transaction{
+    display: flex;
+    gap: 10px;
+
+
+
+
+
+
+
+
+
+    .welcome-msg{
+        width: 157.93px;
+        height: 183.03px;
+        background-image: linear-gradient(to bottom right , #ED654C , #D05842);
+        margin-top: 35px;
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+        overflow: hidden;
+        font-weight: bold;
+        color: white;
+        font-size: 1.4rem;
+        box-shadow: $shade;
+
+        img{
+            filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
+        }
+
+
+        .logo-first{
+            img{
+                position: absolute;
+                top: 0;
+                right: 20px;
+            }
+        }
+
+        .logo-second{
+            img{
+                position: absolute;
+                top: 0;
+                left: -20px;
+                width: 100px;
+            }
+        }
+
+    }
+}

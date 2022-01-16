@@ -1,0 +1,90 @@
+
+
+
+
+.content{
+    flex-grow: 1;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+.header{
+    display: flex;
+    
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+            color: $brownish;
+        }
+        p{
+            color: $no-click;
+        }
+    }
+
+    .account{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        i{
+            color: $no-click;
+            font-size: 1.5rem;
+            transition: 1s;
+            &:hover{
+                color: $cloud;
+                cursor: pointer;
+            }
+        }
+
+        .fa-bell{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: #BB4430;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+            }
+        }
+        .account-info{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .account-profile{
+                img{
+                    width: 50px;
+                    border-radius: 50%;
+                    transition: 1s;
+
+                    &:hover{
+                        outline: 2px $orange solid;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+
+        .account-title{
+            .name{
+                font-weight: bold;
+                color: $brownish;
+            }
+            .admin{
+                color: $no-click;
+            }
+        }
+    }
+}

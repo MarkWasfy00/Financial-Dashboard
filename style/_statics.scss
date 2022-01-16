@@ -1,0 +1,117 @@
+
+
+
+
+.info-statics-outcome{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .headline-statics{
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+
+
+    .static-bar{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .square{
+            width: 42.14px;
+            height: 43.44px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: $shade;
+        }
+
+
+        .indicator{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .bar{
+                width: 367.74px;
+                height: 9.47px;
+                background-color: #F1F1F1;
+                border-radius: $border-rds;
+                .valid{
+                    border-radius: inherit;
+                    height: 100%;
+                }
+            }
+
+            .header{
+                color: #AEAEAE;
+            }
+        }
+
+
+        
+
+
+        .percent{
+            align-self: flex-start;
+            font-size: 1.5rem;
+            color: #696969;
+        }
+    }
+
+
+    .bar1{
+        .square{
+            background-color: #FFEADA;
+            i{
+                color: #F8964C;
+            }
+        }
+
+        .valid{
+            background-image: linear-gradient(to right, #FCAE73,#F79042);
+            width: 52%;
+            
+        }
+    }
+
+
+    .bar2{
+        .square{
+            background-color: #DDF9E4;
+            i{
+                color: #22A447;
+            }
+        }
+        .valid{
+            background-image: linear-gradient(to right, #209D43,#2BC255);
+            width: 21%;
+            
+        }
+    }
+
+
+    .bar3{
+        .square{
+            background-color: #E4F0FF;
+            i{
+                color: #70A6E8;
+            }
+        }
+        .valid{
+            background-color: #70A6E8;
+            width: 74%;
+            
+        }
+    }
+
+
+}
+
+
+

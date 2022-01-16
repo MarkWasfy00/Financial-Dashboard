@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+// font-family: 'Lato', sans-serif; 400 700
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+// font-family: 'Quicksand', sans-serif; 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+//font-family: 'Quicksand', sans-serif; 300 700
+
+
+@font-face {
+    font-family: 'Suprema';
+    src: url(../static/Suprema-reg.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Suprema';
+    src: url(../static/Suprema-semi-bold.ttf);
+    font-weight: bold;
+}
+
+// ----------------- COLORS ------------------------
+
+// background 
+$Grey: hsl(0, 0%, 94%);
+
+// shadow 
+$Shadow: hsl(0, 0%, 91%);
+
+// logo 
+$logo: hsl(204, 74%, 23%);
+$cloud: hsl(204, 77%, 42%);
+
+// not-hovered
+$no-click: hsl(0, 0%, 78%);
+
+
+// on-hover
+$click: hsl(212, 100%, 97%);
+$word: hsl(204, 77%, 42%);
+
+
+// logo-downside 
+$logo2: rgb(25, 123, 189);
+
+// near-black
+$brownish: #404040;
+
+
+// btn-orange
+$orange: #FFC145;
+
+
+
+
+//-----------------------------------------------------
+
+
+// ------------------ Var ---------------------------
+
+// border-raduis
+
+$border-rds : 59px ;
+
+
+// css-shadows
+
+$shade: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+$shade-hover: rgba(25, 123, 189, 0.5) 0px 10px 15px -3px, rgba(25, 123, 189, 0.05) 0px 4px 6px -2px;
