@@ -90,8 +90,10 @@
             border-radius: 15px;
             color: $brownish;
             transition: .5s;
-            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
             font-size: .7rem;
+            
             &:hover{
                 box-shadow: $shade;
                 cursor: pointer;
