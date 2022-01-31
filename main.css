@@ -14,15 +14,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-reg.ttf);
   font-weight: normal;
 }
+
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-semi-bold.ttf);
   font-weight: bold;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +44,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  font-family: "Suprema";
+  font-family: 'Suprema';
 }
 
 img {
@@ -50,25 +52,29 @@ img {
 }
 
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-reg.ttf);
   font-weight: normal;
 }
+
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-semi-bold.ttf);
   font-weight: bold;
 }
+
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-reg.ttf);
   font-weight: normal;
 }
+
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-semi-bold.ttf);
   font-weight: bold;
 }
+
 main {
   width: 1476.59px;
   height: 903.5px;
@@ -82,15 +88,17 @@ main {
 }
 
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-reg.ttf);
   font-weight: normal;
 }
+
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-semi-bold.ttf);
   font-weight: bold;
 }
+
 .nav {
   border-right: 2px #e8e8e8 solid;
   display: -webkit-box;
@@ -105,6 +113,7 @@ main {
           align-items: flex-start;
   padding: 50px 60px 20px 60px;
 }
+
 .nav .slogan {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,19 +123,32 @@ main {
           align-items: center;
   gap: 10px;
 }
+
 .nav .slogan .logo img {
-  -webkit-filter: invert(37%) sepia(33%) saturate(3060%) hue-rotate(180deg) brightness(89%) contrast(81%);
-          filter: invert(37%) sepia(33%) saturate(3060%) hue-rotate(180deg) brightness(89%) contrast(81%);
   width: 50px;
+  position: relative;
 }
+
+.nav .slogan .logo img::after {
+  content: '';
+  position: absolute;
+  background-image: url(../static/coin.svg);
+  width: 4rem;
+  height: 4rem;
+  top: 0;
+  left: 0;
+}
+
 .nav .slogan .brand-name {
   font-weight: bold;
   color: #0f4366;
   font-size: 1.1rem;
 }
+
 .nav .links {
   margin-top: 50px;
 }
+
 .nav .links a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,25 +161,28 @@ main {
           align-items: center;
   gap: 10px;
   margin-block: 10px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-decoration: none;
   width: 150px;
   height: 50px;
   color: #c7c7c7;
   border-radius: 10px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
+
 .nav .links a i {
   margin-left: 25px;
 }
+
 .nav .links a:hover {
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   background-color: #f0f7ff;
   color: #197cbe;
 }
+
 .nav .bottom-cta {
   margin-top: auto;
   display: -webkit-box;
@@ -171,32 +196,33 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .nav .bottom-cta .cloud-img img {
   width: 80px;
-  -webkit-filter: invert(37%) sepia(98%) saturate(582%) hue-rotate(165deg) brightness(90%) contrast(91%);
-          filter: invert(37%) sepia(98%) saturate(582%) hue-rotate(165deg) brightness(90%) contrast(91%);
 }
+
 .nav .bottom-cta p {
   text-align: center;
   width: 160px;
-  font-size: 0.8rem;
+  font-size: .8rem;
   color: #404040;
 }
+
 .nav .bottom-cta .cta-btn {
   margin-top: 10px;
   background-color: #FFC145;
   padding: 15px;
   border-radius: 15px;
   color: #404040;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
-  font-size: 0.7rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: bold;
+  font-size: .7rem;
 }
+
 .nav .bottom-cta .cta-btn:hover {
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   cursor: pointer;
   background-color: #ffb012;
 }
@@ -221,6 +247,7 @@ main {
   display: -ms-flexbox;
   display: flex;
 }
+
 .header .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,12 +258,15 @@ main {
           flex-direction: column;
   gap: 10px;
 }
+
 .header .title h1 {
   color: #404040;
 }
+
 .header .title p {
   color: #c7c7c7;
 }
+
 .header .account {
   margin-left: auto;
   display: -webkit-box;
@@ -247,21 +277,25 @@ main {
           align-items: center;
   gap: 20px;
 }
+
 .header .account i {
   color: #c7c7c7;
   font-size: 1.5rem;
   -webkit-transition: 1s;
   transition: 1s;
 }
+
 .header .account i:hover {
   color: #197cbe;
   cursor: pointer;
 }
+
 .header .account .fa-bell {
   position: relative;
 }
+
 .header .account .fa-bell::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 10px;
   height: 10px;
@@ -270,6 +304,7 @@ main {
   right: 0;
   border-radius: 50%;
 }
+
 .header .account .account-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,41 +314,47 @@ main {
           align-items: center;
   gap: 10px;
 }
+
 .header .account .account-info .account-profile img {
   width: 50px;
   border-radius: 50%;
   -webkit-transition: 1s;
   transition: 1s;
 }
+
 .header .account .account-info .account-profile img:hover {
   outline: 2px #FFC145 solid;
   cursor: pointer;
 }
+
 .header .account .account-title .name {
   font-weight: bold;
   color: #404040;
 }
+
 .header .account .account-title .admin {
   color: #c7c7c7;
 }
 
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-reg.ttf);
   font-weight: normal;
 }
+
 @font-face {
-  font-family: "Suprema";
+  font-family: 'Suprema';
   src: url(../static/Suprema-semi-bold.ttf);
   font-weight: bold;
 }
+
 .info-balance-card1 {
   background-color: white;
   width: 596.66px;
   height: 363.12px;
   border-radius: 20px;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,11 +365,13 @@ main {
           flex-direction: column;
   gap: 5px;
 }
+
 .info-balance-card1 .name {
   font-weight: bold;
   font-size: 1.3rem;
   margin-left: 10px;
 }
+
 .info-balance-card1 .paypal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,6 +381,7 @@ main {
           align-items: center;
   gap: 10px;
 }
+
 .info-balance-card1 .paypal i {
   color: #197bbd;
   font-size: 2rem;
@@ -345,17 +389,20 @@ main {
   -webkit-transition: 1s;
   transition: 1s;
 }
+
 .info-balance-card1 .paypal i:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   cursor: pointer;
 }
+
 .info-balance-card1 .paypal .line {
   width: 1px;
   height: 199.86px;
   background-color: #E8E8E8;
   margin-right: 5px;
 }
+
 .info-balance-card1 .paypal .visa {
   width: 320.43px;
   height: 206.17px;
@@ -374,28 +421,32 @@ main {
   color: white;
   position: relative;
   overflow: hidden;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+
 .info-balance-card1 .paypal .visa .visa-name h2 {
   font-size: 1rem;
 }
+
 .info-balance-card1 .paypal .visa .visa-name p {
-  font-size: 0.6rem;
-  font-family: "Lato", sans-serif;
+  font-size: .6rem;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.39);
 }
+
 .info-balance-card1 .paypal .visa .visa-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
   margin-top: 15px;
 }
+
 .info-balance-card1 .paypal .visa .visa-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,15 +456,14 @@ main {
           justify-content: space-between;
   margin-top: auto;
 }
+
 .info-balance-card1 .paypal .visa .background-logo {
   position: absolute;
-  bottom: -50px;
-  right: -50px;
+  bottom: 0;
+  right: 0;
   width: 230px;
-  -webkit-filter: invert(100%) sepia(13%) saturate(7500%) hue-rotate(191deg) brightness(114%) contrast(112%);
-          filter: invert(100%) sepia(13%) saturate(7500%) hue-rotate(191deg) brightness(114%) contrast(112%);
-  opacity: 0.12;
 }
+
 .info-balance-card1 .paypal .balances {
   text-align: right;
   -ms-flex-item-align: start;
@@ -427,51 +477,61 @@ main {
           flex-direction: column;
   gap: 30px;
 }
+
 .info-balance-card1 .paypal .balances .current .price {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 2rem;
   color: #197bbd;
   font-weight: 700;
 }
+
 .info-balance-card1 .paypal .balances .current .price span {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
 }
+
 .info-balance-card1 .paypal .balances .current .state {
   color: #c7c7c7;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
+
 .info-balance-card1 .paypal .balances .income .price {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.3rem;
   color: #439A86;
   font-weight: 700;
 }
+
 .info-balance-card1 .paypal .balances .income .price span {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
 }
+
 .info-balance-card1 .paypal .balances .income .state {
   color: #c7c7c7;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
+
 .info-balance-card1 .paypal .balances .outcome .price {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.3rem;
   color: #BB4430;
   font-weight: 700;
 }
+
 .info-balance-card1 .paypal .balances .outcome .price span {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
 }
+
 .info-balance-card1 .paypal .balances .outcome .state {
   color: #c7c7c7;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
+
 .info-balance-card1 .weekly {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,6 +545,7 @@ main {
   margin-top: auto;
   margin-left: 20px;
 }
+
 .info-balance-card1 .weekly .limit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,33 +556,39 @@ main {
           flex-direction: column;
   gap: 10px;
 }
+
 .info-balance-card1 .weekly .limit .progress-bar {
   width: 320px;
   height: 9.47px;
   background-color: #F1F1F1;
   border-radius: 20px;
 }
+
 .info-balance-card1 .weekly .limit .progress-bar .load {
   border-radius: inherit;
   background-color: #197bbd;
   height: 100%;
   width: 30%;
 }
+
 .info-balance-card1 .weekly .limit .weekly-payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 80px;
 }
+
 .info-balance-card1 .weekly .limit .weekly-payment .limit {
   color: #c7c7c7;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
+
 .info-balance-card1 .weekly .limit .weekly-payment .available {
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif;
+  font-size: .8rem;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 1.5px;
 }
+
 .info-balance-card1 .weekly .activiation {
   margin-right: 10px;
   display: -webkit-box;
@@ -535,9 +602,11 @@ main {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+
 .info-balance-card1 .weekly .activiation .disable {
   color: #AEAEAE;
 }
+
 .info-balance-card1 .weekly .activiation .swap {
   -webkit-appearance: none;
   width: 50px;
@@ -556,8 +625,9 @@ main {
   -webkit-transition: 500ms;
   transition: 500ms;
 }
+
 .info-balance-card1 .weekly .activiation .swap::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #CDCDCD;
   width: 25px;
@@ -567,12 +637,14 @@ main {
   margin-left: -5px;
   cursor: pointer;
 }
+
 .info-balance-card1 .weekly .activiation .swap:checked {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-color: #4cd964;
 }
+
 .info-balance-card1 .weekly .activiation .swap:checked::after {
   background-color: green;
 }
@@ -592,8 +664,8 @@ main {
   width: 596.66px;
   height: 322.38px;
   background-color: white;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   border-radius: 20px;
   padding: 25px;
   display: -webkit-box;
@@ -605,11 +677,13 @@ main {
           flex-direction: column;
   gap: 15px;
 }
+
 .info-balance-card2 .name {
   font-weight: bold;
   font-size: 1.3rem;
   margin-left: 10px;
 }
+
 .info-balance-card2 .history {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,6 +694,7 @@ main {
           flex-direction: column;
   gap: 15px;
 }
+
 .info-balance-card2 .history-heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,15 +702,19 @@ main {
   gap: 30px;
   color: #AEAEAE;
 }
+
 .info-balance-card2 .history-heading .reciever {
   margin-right: auto;
 }
+
 .info-balance-card2 .history-heading .type {
   width: 100px;
 }
+
 .info-balance-card2 .history-heading .date {
   width: 100px;
 }
+
 .info-balance-card2 .history-heading .amount {
   width: 70px;
   display: -webkit-box;
@@ -645,18 +724,20 @@ main {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
 .info-balance-card2 .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: .9rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid rgba(236, 236, 236, 0.5);
   padding-bottom: 7px;
 }
+
 .info-balance-card2 .block .company-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,6 +745,7 @@ main {
   gap: 10px;
   margin-right: auto;
 }
+
 .info-balance-card2 .block .company-name .icon {
   width: 20px;
   height: 20px;
@@ -679,37 +761,44 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
+
 .info-balance-card2 .block .company-name .icon i {
-  font-size: 0.7rem;
+  font-size: .7rem;
   color: #404040;
 }
+
 .info-balance-card2 .block .company-name .icon:hover {
   background-color: #197bbd;
   cursor: pointer;
 }
+
 .info-balance-card2 .block .company-name .icon:hover i {
   color: white;
 }
+
 .info-balance-card2 .block .company-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
+
 .info-balance-card2 .block .company-type .type {
   width: 100px;
   color: #AEAEAE;
 }
+
 .info-balance-card2 .block .company-type .date {
   width: 100px;
   color: #AEAEAE;
 }
+
 .info-balance-card2 .block .company-type .amount {
   width: 70px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,6 +807,7 @@ main {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
 .info-balance-card2 .block .date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,10 +842,12 @@ main {
   gap: 5px;
   padding-top: 25px;
 }
+
 .headline .name {
   font-weight: bold;
   font-size: 1.3rem;
 }
+
 .headline i {
   background-color: #FFC145;
   border-radius: 50%;
@@ -778,12 +870,13 @@ main {
   display: flex;
   gap: 15px;
 }
+
 .cards .card {
   width: 157.93px;
   height: 168.74px;
   background-color: white;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   border-radius: 20px;
   padding: 20px;
   display: -webkit-box;
@@ -796,24 +889,29 @@ main {
   -webkit-transition: 1s;
   transition: 1s;
 }
+
 .cards .card:hover {
   -webkit-box-shadow: rgba(25, 123, 189, 0.5) 0px 10px 15px -3px, rgba(25, 123, 189, 0.05) 0px 4px 6px -2px;
           box-shadow: rgba(25, 123, 189, 0.5) 0px 10px 15px -3px, rgba(25, 123, 189, 0.05) 0px 4px 6px -2px;
   cursor: pointer;
 }
+
 .cards .card .price {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
 }
+
 .cards .card .date {
   margin-bottom: auto;
-  font-size: 0.8rem;
+  font-size: .8rem;
   color: #c7c7c7;
 }
+
 .cards .card .svg img {
   width: 30px;
 }
+
 .cards i {
   color: #197bbd;
   -ms-flex-item-align: center;
@@ -833,10 +931,12 @@ main {
           flex-direction: column;
   gap: 25px;
 }
+
 .info-statics-outcome .headline-statics {
   font-weight: bold;
   font-size: 1.3rem;
 }
+
 .info-statics-outcome .static-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -846,6 +946,7 @@ main {
           align-items: center;
   gap: 20px;
 }
+
 .info-statics-outcome .static-bar .square {
   width: 42.14px;
   height: 43.44px;
@@ -860,9 +961,10 @@ main {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+
 .info-statics-outcome .static-bar .indicator {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,60 +975,67 @@ main {
           flex-direction: column;
   gap: 5px;
 }
+
 .info-statics-outcome .static-bar .indicator .bar {
   width: 367.74px;
   height: 9.47px;
   background-color: #F1F1F1;
   border-radius: 59px;
 }
+
 .info-statics-outcome .static-bar .indicator .bar .valid {
   border-radius: inherit;
   height: 100%;
 }
+
 .info-statics-outcome .static-bar .indicator .header {
   color: #AEAEAE;
 }
+
 .info-statics-outcome .static-bar .percent {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 1.5rem;
   color: #696969;
 }
+
 .info-statics-outcome .bar1 .square {
   background-color: #FFEADA;
 }
+
 .info-statics-outcome .bar1 .square i {
   color: #F8964C;
 }
+
 .info-statics-outcome .bar1 .valid {
-  -webkit-animation: 2s shopping ease-in-out;
-          animation: 2s shopping ease-in-out;
   background-image: -webkit-gradient(linear, left top, right top, from(#FCAE73), to(#F79042));
   background-image: linear-gradient(to right, #FCAE73, #F79042);
   width: 52%;
 }
+
 .info-statics-outcome .bar2 .square {
   background-color: #DDF9E4;
 }
+
 .info-statics-outcome .bar2 .square i {
   color: #22A447;
 }
+
 .info-statics-outcome .bar2 .valid {
-  -webkit-animation: 2s electronics ease-in-out;
-          animation: 2s electronics ease-in-out;
   background-image: -webkit-gradient(linear, left top, right top, from(#209D43), to(#2BC255));
   background-image: linear-gradient(to right, #209D43, #2BC255);
   width: 21%;
 }
+
 .info-statics-outcome .bar3 .square {
   background-color: #E4F0FF;
 }
+
 .info-statics-outcome .bar3 .square i {
   color: #70A6E8;
 }
+
 .info-statics-outcome .bar3 .valid {
-  -webkit-animation: 2s travels ease-in-out;
-          animation: 2s travels ease-in-out;
   background-color: #70A6E8;
   width: 74%;
 }
@@ -942,19 +1051,21 @@ main {
   width: 341.51px;
   height: 183.03px;
   background-color: white;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   margin-top: 35px;
   border-radius: 19px;
   padding: 10px;
   gap: 10px;
 }
+
 .send-transaction .users {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
 }
+
 .send-transaction .users .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -970,23 +1081,28 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .send-transaction .users .user .photo img {
   width: 44px;
   border-radius: 50%;
 }
+
 .send-transaction .users .user .photo img:hover {
   outline: 2px #FFC145 solid;
   cursor: pointer;
 }
+
 .send-transaction .users .user .photo img:active {
   -webkit-filter: invert(38%) sepia(76%) saturate(721%) hue-rotate(166deg) brightness(92%) contrast(94%);
           filter: invert(38%) sepia(76%) saturate(721%) hue-rotate(166deg) brightness(92%) contrast(94%);
 }
+
 .send-transaction .users .user .omar {
   position: relative;
 }
+
 .send-transaction .users .user .omar::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 10px;
   height: 10px;
@@ -995,9 +1111,11 @@ main {
   top: 0;
   right: 5px;
 }
+
 .send-transaction .users .user .name {
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
+
 .send-transaction .users .add-new {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1011,6 +1129,7 @@ main {
           justify-content: center;
   gap: 5px;
 }
+
 .send-transaction .users .add-new i {
   background-color: #FFC145;
   border-radius: 50%;
@@ -1026,25 +1145,30 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .send-transaction .users .add-new i:hover {
   background-color: #ffb012;
   cursor: pointer;
 }
+
 .send-transaction .users .add-new .add-me {
-  font-size: 0.7rem;
+  font-size: .7rem;
 }
+
 .send-transaction .send {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
+
 .send-transaction .send .cash {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
+
 .send-transaction .send .cash .amount {
   width: 175.32px;
   height: 36.52px;
@@ -1053,8 +1177,9 @@ main {
   padding: 5px;
   border: 2px #197BBD solid;
   outline: none;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
+
 .send-transaction .send .cash p {
   position: absolute;
   right: 10px;
@@ -1063,23 +1188,25 @@ main {
           transform: translateY(-50%);
   font-size: 1.5rem;
   color: #C7C7C7;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
+
 .send-transaction .send .cta-btn2 button {
   width: 131.59px;
   height: 36.52px;
   border-radius: 13.62px;
   border: none;
   background-color: #FFC145;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: .8rem;
   -webkit-transition: 1s;
   transition: 1s;
 }
+
 .send-transaction .send .cta-btn2 button:hover {
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   background-color: #ffb012;
   cursor: pointer;
 }
@@ -1090,6 +1217,7 @@ main {
   display: flex;
   gap: 10px;
 }
+
 .info-statics-transaction .welcome-msg {
   width: 157.93px;
   height: 183.03px;
@@ -1113,78 +1241,25 @@ main {
   font-weight: bold;
   color: white;
   font-size: 1.4rem;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-.info-statics-transaction .welcome-msg:hover {
-  -webkit-box-shadow: rgba(25, 123, 189, 0.5) 0px 10px 15px -3px, rgba(25, 123, 189, 0.05) 0px 4px 6px -2px;
-          box-shadow: rgba(25, 123, 189, 0.5) 0px 10px 15px -3px, rgba(25, 123, 189, 0.05) 0px 4px 6px -2px;
-  cursor: pointer;
-}
+
 .info-statics-transaction .welcome-msg img {
   -webkit-filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
           filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
 }
+
 .info-statics-transaction .welcome-msg .logo-first img {
   position: absolute;
   top: 0;
   right: 20px;
 }
+
 .info-statics-transaction .welcome-msg .logo-second img {
   position: absolute;
   top: 0;
   left: -20px;
   width: 100px;
 }
-
-@-webkit-keyframes shopping {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 52%;
-  }
-}
-
-@keyframes shopping {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 52%;
-  }
-}
-@-webkit-keyframes electronics {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 21%;
-  }
-}
-@keyframes electronics {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 21%;
-  }
-}
-@-webkit-keyframes travels {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 74%;
-  }
-}
-@keyframes travels {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 74%;
-  }
-}
+/*# sourceMappingURL=main.css.map */

@@ -100,11 +100,11 @@
 
             .background-logo{
                 position: absolute;
-                bottom: -50px;
-                right: -50px;
+                bottom: 0;
+                right: 0;
                 width: 230px;
-                filter: invert(100%) sepia(13%) saturate(7500%) hue-rotate(191deg) brightness(114%) contrast(112%);
-                opacity: .12;
+                //filter: invert(100%) sepia(13%) saturate(7500%) hue-rotate(191deg) brightness(114%) contrast(112%);
+                //opacity: .12;
                 
             }
 
