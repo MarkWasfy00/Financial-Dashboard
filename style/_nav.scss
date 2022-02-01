@@ -16,19 +16,22 @@
         align-items: center;
         gap: 10px;
         .logo{
+            position: relative;
             img{
                 //filter: invert(37%) sepia(33%) saturate(3060%) hue-rotate(180deg) brightness(89%) contrast(81%);
                 width: 50px;
-                position: relative;
-                &::after{
-                    content: '';
-                    position: absolute;
-                    background-image: url(../static/coin.svg);
-                    width: 4rem;
-                    height: 4rem;
-                    top: 0;
-                    left: 0;
-                }
+                
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                background-image: url(../static/coin.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 1.5rem;
+                height: 1.5rem;
+                top: 0;
+                right: 0;
             }
         }
 
@@ -82,6 +85,7 @@
                 //filter: invert(37%) sepia(98%) saturate(582%) hue-rotate(165deg) brightness(90%) contrast(91%);
                
             }
+            
         }
 
         p{

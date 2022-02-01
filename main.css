@@ -124,19 +124,24 @@ main {
   gap: 10px;
 }
 
-.nav .slogan .logo img {
-  width: 50px;
+.nav .slogan .logo {
   position: relative;
 }
 
-.nav .slogan .logo img::after {
+.nav .slogan .logo img {
+  width: 50px;
+}
+
+.nav .slogan .logo::after {
   content: '';
   position: absolute;
   background-image: url(../static/coin.svg);
-  width: 4rem;
-  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .nav .slogan .brand-name {
@@ -1245,15 +1250,12 @@ main {
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.info-statics-transaction .welcome-msg img {
-  -webkit-filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
-          filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
-}
-
 .info-statics-transaction .welcome-msg .logo-first img {
   position: absolute;
   top: 0;
   right: 20px;
+  -webkit-filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
+          filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
 }
 
 .info-statics-transaction .welcome-msg .logo-second img {
@@ -1261,5 +1263,16 @@ main {
   top: 0;
   left: -20px;
   width: 100px;
+  -webkit-filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
+          filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
+}
+
+.info-statics-transaction .welcome-msg .logo-third img {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 50px;
+  -webkit-transform: rotate(-65deg);
+          transform: rotate(-65deg);
 }
 /*# sourceMappingURL=main.css.map */

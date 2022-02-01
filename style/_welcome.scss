@@ -30,9 +30,7 @@
         font-size: 1.4rem;
         box-shadow: $shade;
 
-        img{
-            filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
-        }
+        
 
 
         .logo-first{
@@ -40,6 +38,7 @@
                 position: absolute;
                 top: 0;
                 right: 20px;
+                filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
             }
         }
 
@@ -49,6 +48,17 @@
                 top: 0;
                 left: -20px;
                 width: 100px;
+                filter: invert(38%) sepia(44%) saturate(1023%) hue-rotate(324deg) brightness(102%) contrast(87%);
+            }
+        }
+
+        .logo-third{
+            img{
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                width: 50px;
+                transform: rotate(-65deg);
             }
         }
 
